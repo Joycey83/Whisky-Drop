@@ -21,42 +21,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Whisky Drop</a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item mr-2"><a href="/about" class="nav-link">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-toggle="dropdown" aria-expanded="false">
-                        Whiskey
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Irish</a>
-                        <a class="dropdown-item" href="#">Scotch</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                        <a class="dropdown-item" href="#">American</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a></li>
+    <div class="container-fluid navalert-container">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">Whisky Drop</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item mr-2"><a href="/about" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Whiskey
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Irish</a>
+                            <a class="dropdown-item" href="#">Scotch</a>
+                            <a class="dropdown-item" href="#">Japanese</a>
+                            <a class="dropdown-item" href="#">American</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a>
+                    </li>
 
 
 
-            </ul>
-        </div>
-        <div class="d-none d-md-block">
-            <p class="navbar-text my-auto mr-2"><em>Great Whiskey delivered to your door!</em></p>
-            <a href="/login">Sign In / Sign Up</a>
-        </div>
+                </ul>
+            </div>
+            <div class="d-none d-md-block">
+                <p class="navbar-text my-auto mr-2"><em>Great Whiskey delivered to your door!</em></p>
+                <a href="/login" class="btn btn-cta btn-red">Sign In / Sign Up</a>
+            </div>
 
 
-    </nav>
+        </nav>
+    </div>
     <!--  
     <div class="container alert-container">
         <div class="row d-none d-sm-block">
@@ -72,15 +75,18 @@
     -->
     <!-- Callout -->
     <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                    </p><s class="d-none d-sm-inline">$19.99</s><span class="d-inline d-sm-none"><br></span>
-                    <strong><mark>First one is free!</mark></strong>
-                    <br><br>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider-orange">
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.<s
+                            class="d-none d-sm-inline"> $19.99</s><span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First one is free!</mark></strong>
+                    </p>
+
+                    <button class="btn btn-lg btn-cta btn-red" data-toggle="modal" data-target="#signUpModal">Sign
                         Up!</button>
                     <p class="text-muted"><small>You must be over 18 years old to sign up to our service, Please drink
                             responsibly</small></p>
@@ -103,8 +109,8 @@
                 <div class="col-12 col-md-6">
                     <div class="media">
                         <div class="d-none d-sm-block">
-                            <img src="./images/girl-image.png" alt="images of a girl wearing a hat" class="rounded-circle mr-3"
-                                height="100" width="100">
+                            <img src="./images/girl-image.png" alt="images of a girl wearing a hat"
+                                class="rounded-circle mr-3" height="100" width="100">
                         </div>
                         <div class="media-body">
                             <blockquote class="blockquote">
